@@ -10,6 +10,7 @@ import LocalOfferIcon  from '@material-ui/icons/LocalOffer';
 import RoomIcon  from '@material-ui/icons/Room';
 import MoreVertIcon  from '@material-ui/icons/MoreVert';
 
+import Response from './response';
 
 import './SearchPage.css';
 import Search from './Search';
@@ -57,14 +58,40 @@ function SearchPage() {
             </div>
           </div>
           <div className="searchPage_optionsRight">
-            
+            <div className="searchPage_option">
+             <Link to="/settting">Settings</Link>
+            </div> 
+            <div className="searchPage_option">
+             <Link to="/tools">Tools</Link>
+            </div> 
           </div>
          </div>
         </div>
       </div>
-      <div className="searchPage_results">
+      
+       {true && (
+        <div className="searchPage_results">
+          <p className="searchPage_resultsCount">
+            About {data?.searchInformation.formattedTotalResults}
+            retults ({data?.searchInformation.formattedSearchTime} seconds) for {term}
+          </p>
 
-      </div>
+          {data?.items.map(item => (
+            <div className='searchPage_result'>
+              <a href={item.link}>
+                {item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src && (
+                  <img className="searchPage_resultImage" src={item.pagemap?.cse_image[0]?.src} alt="" />
+                )}
+                {item.displayLink}
+              </a>
+              <a href={item.link} className="searchPage_resultTitle">
+                <h2>{item.title}</h2>
+              </a>
+              <p className='searchPage_resultSnippet'>{item.snippet}</p>
+            </div>
+          ))}
+         </div>
+       )}
     </div>
   );
 }

@@ -85,7 +85,7 @@ export default{
             "viewport": "width=device-width, initial-scale=1.0",
             "twitter:description": "Tesla is accelerating the world's transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses.",
             "apple-mobile-web-app-capable": "yes",
-            "mobileoptimized": width,
+            "mobileoptimized": 'width',
             "og:url": "https://www.tesla.com/"
           }
         ],
@@ -185,7 +185,7 @@ export default{
             "viewport": "width=device-width, initial-scale=1.0",
             "twitter:description": "Model 3 is designed for electric-powered performance, with quick acceleration, long range and fast charging.",
             "apple-mobile-web-app-capable": "yes",
-            "mobileoptimized": width,
+            "mobileoptimized": 'width',
             "og:url": "https://www.tesla.com/model3"
           }
         ],
@@ -269,7 +269,7 @@ export default{
             "viewport": "width=device-width, initial-scale=1.0",
             "twitter:description": "Model S is built for speed and range, with beyond ludicrous acceleration, unparalleled performance and a refined design.",
             "apple-mobile-web-app-capable": "yes",
-            "mobileoptimized": width,
+            "mobileoptimized": 'width',
             "og:url": "https://www.tesla.com/models"
           }
         ],
@@ -314,7 +314,7 @@ export default{
             "twitter:image": "https://tesla-cdn.thron.com/delivery/public/image/tesla/75c14089-3355-4b7f-b882-285d8d3a2caa/bvlatuR/std/1200x628/family_social",
             "viewport": "width=device-width, initial-scale=1.0",
             "twitter:description": "Tesla's mission is to accelerate the world's transition to sustainable energy. Today, Tesla builds not only all-electric vehicles but also infinitely scalable clean energy generation and storage products.",
-            "mobileoptimized": width
+            "mobileoptimized": 'width'
           }
         ],
         cse_image: [
@@ -408,7 +408,7 @@ export default{
             "twitter:image": "https://tesla-cdn.thron.com/delivery/public/image/tesla/75c14089-3355-4b7f-b882-285d8d3a2caa/bvlatuR/std/1200x628/family_social",
             "viewport": "width=device-width, initial-scale=1.0",
             "twitter:description": "AUSTIN, Texas, January 2, 2022 – In the fourth quarter, we achieved production of more than 305,000 vehicles and deliveries of over 308,000 vehicles. In 2021, we delivered over 936,000 vehicles.",
-            "mobileoptimized": width
+            "mobileoptimized": 'width'
           }
         ],
         cse_image: [
