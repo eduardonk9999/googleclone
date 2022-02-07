@@ -17,11 +17,11 @@ import Search from './Search';
 
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
-  //const {data} = useGoogleSearch(term);
+  const {data} = useGoogleSearch(term);
 
-  const data = Response;
+  //const data = Response;
 
-  console.log(data)
+  //console.log(data)
   return (
     <div className="searchPage">
       <div className="searchPage_header">
@@ -69,7 +69,7 @@ function SearchPage() {
         </div>
       </div>
       
-       {true && (
+       {term && (
         <div className="searchPage_results">
           <p className="searchPage_resultsCount">
             About {data?.searchInformation.formattedTotalResults}

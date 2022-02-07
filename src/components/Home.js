@@ -10,8 +10,7 @@ function Home() {
     <div className="home">
       <div className="home_header">
         <div className="home_headerLeft">
-          <Link to="/about">About</Link>
-          <Link to="/store">Store</Link>
+        
         </div>
         <div className="home_headerRight">
           <Link to="/gmail">Gmail</Link>
